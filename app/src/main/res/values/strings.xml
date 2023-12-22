@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">app-node-js</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_Home_fragment">Hello Home fragment</string>
+    <string name="hello_finished_fragment">hello_finished_fragment</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/corners"
+    android:elevation="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edit a todo●"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:alpha=".9"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/color_primary"
+        android:fontFamily="@font/sonsie_one"
+        android:textSize="23sp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/InputTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/OutlinedBoxWithBorderColor"
+        android:hint="title..."
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="40dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/InputDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputTitle"
+        style="@style/OutlinedBoxWithBorderColor"
+        android:hint="description..."
+        android:layout_marginBottom="20dp"
+
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- custom_button.xml -->
+    <Button android:id="@+id/button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edit"
+        android:textColor="@color/color_success"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/background_primary"
+        android:layout_below="@+id/InputDesc"
+        android:layout_alignParentRight="true"
+        android:elevation="23dp"
+        />
+
+    <Button android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:layout_toLeftOf="@+id/button_edit"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/color_danger"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/background_danger"
+        android:layout_below="@+id/InputDesc"
+        android:elevation="23dp"
+        />
+
+</RelativeLayout>

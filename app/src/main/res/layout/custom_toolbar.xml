@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbarMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="12dp"
+    android:background="@color/gray_200"
+    android:elevation="18dp"
+
+    >
+
+        <ImageView
+            android:id="@+id/menuToolbar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu"
+            app:tint="@color/gray_500" />
+
+    <ImageView
+        android:id="@+id/addToolbar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/add"
+        android:background="@drawable/background_add"
+        android:layout_alignParentRight="true"
+        app:tint="@color/gray_100" />
+
+</RelativeLayout>

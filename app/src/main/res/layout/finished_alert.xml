@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="are you sure to finished this task?"
+
+        android:textSize="29dp"
+        android:textAlignment="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button android:id="@+id/button_cancel_finished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:textColor="@color/color_danger"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/background_danger"
+            android:elevation="23dp"
+            android:layout_marginRight="26dp"
+            />
+
+            <!-- custom_button.xml -->
+            <Button android:id="@+id/button_finished"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="finished"
+                android:textColor="@color/color_success"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/background_success"
+                android:elevation="23dp"
+                android:layout_marginRight="8dp"
+
+                />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
